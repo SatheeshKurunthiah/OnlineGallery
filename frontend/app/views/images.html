@@ -1,0 +1,84 @@
+<script>
+  jQuery(document).ready(function($) {
+
+    $('#myCarousel').carousel({
+      interval: 5000
+    });
+
+    //Handles the carousel thumbnails
+
+    $(document).on('click', "[id^=carousel-selector-]", function() {
+      console.log("entry");
+      var id_selector = $(this).attr("id");
+      try {
+        console.log("id : " + id_selector);
+        var id = /-(\d+)$/.exec(id_selector)[1];
+        console.log(id_selector, id);
+        jQuery('#myCarousel').carousel(parseInt(id));
+      } catch (e) {
+        console.log('Regex failed!', e);
+      }
+    });
+
+    // When the carousel slides, auto update the text
+    $('#myCarousel').on('slid.bs.carousel', function(e) {
+      var id = $('.item.active').data('slide-number');
+      $('#carousel-text').html($('#slide-content-' + id).html());
+    });
+
+  });
+</script>
+
+
+<div class="container">
+  <div id="main_area">
+    <!-- Slider -->
+    <div class="row">
+      <div class="col-sm-6" id="slider-thumbs">
+        <!-- Bottom switcher of slider-->
+        <ul class="hide-bullets">
+          <li class="col-sm-3 imageItem" ng-repeat="image in gallery track by $index">
+            <a class="thumbnail" id="{{image.number}}">
+              <img class="imageContent" ng-src="{{image.source}}">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="col-xs-12" id="slider">
+          <!-- Top part of the slider-->
+          <div class="row">
+            <div class="col-sm-12" id="carousel-bounding-box">
+              <div class="carousel slide" id="myCarousel" data-ride="carousel">
+                <!-- Carousel items-->
+
+                <div class="carousel-inner">
+
+                  <div class="item" ng-class="{active:!$index}" ng-repeat="image in gallery track by $index" data-slide-number="{{$index}}">
+                    <img ng-Src="{{image.source}}">
+                  </div>
+
+                </div>
+
+                <!-- Carousel nav-->
+                <a class="left carousel-control" role="button" data-slide="prev" onclick="$('#myCarousel').carousel('prev')">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" role="button" data-slide="next" onclick="$('#myCarousel').carousel('next')">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--/Slider-->
+    </div>
+
+  </div>
+</div>
+
+

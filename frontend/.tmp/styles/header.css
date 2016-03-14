@@ -1,0 +1,45 @@
+.navbar, .dropdown-menu{
+background:rgba(255,255,255,0.25);
+border: none;
+
+}
+
+.nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
+  border-bottom: 3px solid transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  border-bottom: 3px solid transparent;
+  background: none;
+}
+.navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+ color: #fff;
+}
+.dropdown-menu{
+    box-shadow:none;
+}
+
+.nav li:hover:nth-child(8n+1), .nav li.active:nth-child(8n+1){
+  border-bottom: #C4E17F 3px solid;
+}
+.nav li:hover:nth-child(8n+2), .nav li.active:nth-child(8n+2){
+  border-bottom: #F7FDCA 3px solid;
+}
+.nav li:hover:nth-child(8n+3), .nav li.active:nth-child(8n+3){
+  border-bottom: #FECF71 3px solid;
+}
+.nav li:hover:nth-child(8n+4), .nav li.active:nth-child(8n+4){
+  border-bottom: #F0776C 3px solid;
+}
+.nav li:hover:nth-child(8n+5), .nav li.active:nth-child(8n+5){
+  border-bottom: #DB9DBE 3px solid;
+}
+.nav li:hover:nth-child(8n+6), .nav li.active:nth-child(8n+6){
+  border-bottom: #C49CDE 3px solid;
+}
+.nav li:hover:nth-child(8n+7), .nav li.active:nth-child(8n+7){
+  border-bottom: #669AE1 3px solid;
+}
+.nav li:hover:nth-child(8n+8), .nav li.active:nth-child(8n+8){
+  border-bottom: #62C2E4 3px solid;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlYWRlci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxrQ0FBa0M7QUFDbEMsYUFBYTs7Q0FFWjs7QUFFRDtFQUNFLHFDQUFxQztDQUN0QztBQUNEO0VBQ0UscUNBQXFDO0VBQ3JDLGlCQUFpQjtDQUNsQjtBQUNEO0NBQ0MsWUFBWTtDQUNaO0FBQ0Q7SUFFSSxnQkFBZ0I7Q0FDbkI7O0FBRUQ7RUFDRSxpQ0FBaUM7Q0FDbEM7QUFDRDtFQUNFLGlDQUFpQztDQUNsQztBQUNEO0VBQ0UsaUNBQWlDO0NBQ2xDO0FBQ0Q7RUFDRSxpQ0FBaUM7Q0FDbEM7QUFDRDtFQUNFLGlDQUFpQztDQUNsQztBQUNEO0VBQ0UsaUNBQWlDO0NBQ2xDO0FBQ0Q7RUFDRSxpQ0FBaUM7Q0FDbEM7QUFDRDtFQUNFLGlDQUFpQztDQUNsQyIsImZpbGUiOiJoZWFkZXIuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5hdmJhciwgLmRyb3Bkb3duLW1lbnV7XHJcbmJhY2tncm91bmQ6cmdiYSgyNTUsMjU1LDI1NSwwLjI1KTtcclxuYm9yZGVyOiBub25lO1xyXG5cclxufVxyXG5cclxuLm5hdj5saT5hLCAuZHJvcGRvd24tbWVudT5saT5hOmZvY3VzLCAuZHJvcGRvd24tbWVudT5saT5hOmhvdmVyLCAuZHJvcGRvd24tbWVudT5saT5hLCAuZHJvcGRvd24tbWVudT5saXtcclxuICBib3JkZXItYm90dG9tOiAzcHggc29saWQgdHJhbnNwYXJlbnQ7XHJcbn1cclxuLm5hdj5saT5hOmZvY3VzLCAubmF2PmxpPmE6aG92ZXIsLm5hdiAub3Blbj5hLCAubmF2IC5vcGVuPmE6Zm9jdXMsIC5uYXYgLm9wZW4+YTpob3ZlciwgLmRyb3Bkb3duLW1lbnU+bGk+YTpmb2N1cywgLmRyb3Bkb3duLW1lbnU+bGk+YTpob3ZlcntcclxuICBib3JkZXItYm90dG9tOiAzcHggc29saWQgdHJhbnNwYXJlbnQ7XHJcbiAgYmFja2dyb3VuZDogbm9uZTtcclxufVxyXG4ubmF2YmFyIGEsIC5kcm9wZG93bi1tZW51PmxpPmEsIC5kcm9wZG93bi1tZW51PmxpPmE6Zm9jdXMsIC5kcm9wZG93bi1tZW51PmxpPmE6aG92ZXJ7XHJcbiBjb2xvcjogI2ZmZjtcclxufVxyXG4uZHJvcGRvd24tbWVudXtcclxuICAgICAgLXdlYmtpdC1ib3gtc2hhZG93OiBub25lO1xyXG4gICAgYm94LXNoYWRvdzpub25lO1xyXG59XHJcblxyXG4ubmF2IGxpOmhvdmVyOm50aC1jaGlsZCg4bisxKSwgLm5hdiBsaS5hY3RpdmU6bnRoLWNoaWxkKDhuKzEpe1xyXG4gIGJvcmRlci1ib3R0b206ICNDNEUxN0YgM3B4IHNvbGlkO1xyXG59XHJcbi5uYXYgbGk6aG92ZXI6bnRoLWNoaWxkKDhuKzIpLCAubmF2IGxpLmFjdGl2ZTpudGgtY2hpbGQoOG4rMil7XHJcbiAgYm9yZGVyLWJvdHRvbTogI0Y3RkRDQSAzcHggc29saWQ7XHJcbn1cclxuLm5hdiBsaTpob3ZlcjpudGgtY2hpbGQoOG4rMyksIC5uYXYgbGkuYWN0aXZlOm50aC1jaGlsZCg4biszKXtcclxuICBib3JkZXItYm90dG9tOiAjRkVDRjcxIDNweCBzb2xpZDtcclxufVxyXG4ubmF2IGxpOmhvdmVyOm50aC1jaGlsZCg4bis0KSwgLm5hdiBsaS5hY3RpdmU6bnRoLWNoaWxkKDhuKzQpe1xyXG4gIGJvcmRlci1ib3R0b206ICNGMDc3NkMgM3B4IHNvbGlkO1xyXG59XHJcbi5uYXYgbGk6aG92ZXI6bnRoLWNoaWxkKDhuKzUpLCAubmF2IGxpLmFjdGl2ZTpudGgtY2hpbGQoOG4rNSl7XHJcbiAgYm9yZGVyLWJvdHRvbTogI0RCOURCRSAzcHggc29saWQ7XHJcbn1cclxuLm5hdiBsaTpob3ZlcjpudGgtY2hpbGQoOG4rNiksIC5uYXYgbGkuYWN0aXZlOm50aC1jaGlsZCg4bis2KXtcclxuICBib3JkZXItYm90dG9tOiAjQzQ5Q0RFIDNweCBzb2xpZDtcclxufVxyXG4ubmF2IGxpOmhvdmVyOm50aC1jaGlsZCg4bis3KSwgLm5hdiBsaS5hY3RpdmU6bnRoLWNoaWxkKDhuKzcpe1xyXG4gIGJvcmRlci1ib3R0b206ICM2NjlBRTEgM3B4IHNvbGlkO1xyXG59XHJcbi5uYXYgbGk6aG92ZXI6bnRoLWNoaWxkKDhuKzgpLCAubmF2IGxpLmFjdGl2ZTpudGgtY2hpbGQoOG4rOCl7XHJcbiAgYm9yZGVyLWJvdHRvbTogIzYyQzJFNCAzcHggc29saWQ7XHJcbn0iXX0= */

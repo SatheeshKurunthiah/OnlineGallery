@@ -1,0 +1,21 @@
+<div ng-controller="UploadCtrl">
+  <form ng-submit="submit()" name="upload" class="form-signin">
+    <legend>Upload maXTouch Studio Extensions</legend>
+    <div class="centerAlign">
+      <div class="pad" contenteditable="true">
+        <span style="display: inline;">
+            File name :
+        <input ngf-select="onFileSelect($files)" class="btn btn-info btn-block" ng-model="file" name="file" accept=".vsix" value="Select" type="file" required>
+        <i class="warningTsxt" ng-show="upload.file.$error.required">*required</i>
+      </span>
+      </div>
+      <input type="checkbox" name="IsVisibleToAll" ng-model="IsVisibleToAll">Visible To All User</input>
+
+      <br/>
+      <br/>
+
+      <button style="width:50%" class="btn btn-lg btn-default btn-block" type="submit">Upload</button>
+    </div>
+  </form>
+</div>
+

@@ -1,0 +1,35 @@
+
+<h1>maXTouch Studio Gallery</h1>
+
+<br/>
+
+<!--<div class="well well-sm">
+  <div class="btn-group">
+    <a id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list"></span>List</a>
+    <a id="grid" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th"></span>Grid</a>
+  </div>
+</div>-->
+
+<div ng-controller="DownloadCtrl">
+  <div ng-repeat="item in gallery">
+    <div class="item  col-xs-4 col-lg-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3 class="group inner list-group-item-heading">
+                        {{item.displayName}}</h3>
+          <p class="group inner list-group-item-text">
+            {{item.description}}</p>
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <p>{{item.rating}}</p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <button class="btn btn-success" ng-click="submit(item)" type="submit">Download</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

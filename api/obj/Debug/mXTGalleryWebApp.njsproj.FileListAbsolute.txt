@@ -1,0 +1,2 @@
+D:\Workspace\gallerywebapp\api\obj\Debug\mXTGalleryWebApp.njsprojResolveAssemblyReference.cache
+D:\Workspace\gallerywebapp\api\bin\Microsoft.NodejsTools.WebRole.dll
